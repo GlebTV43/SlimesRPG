@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Slimes RPG</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <h1 style="text-align: center"></h1>
+    <link rel="stylesheet" href='/static/gradient-button.css'/>
+    <link rel="stylesheet" href="https://www.htmlbook.ru/main.css">
+</head>
+
+<body style="background-color:#b3f5d0">
+<h1 style="color:#69c994">Slimes RPG</h1>
+<a href="https://t.me/slimes_rpg_bot" class="gradient-button">Мы в Telegram</a>
+<a href="https://vk.com/slimesrpg" class="gradient-button">Мы в VK</a>
+<h2 style="color:#69c994">Общий рейтинг</h2>
+<table>
+  <tr>
+    <th>№</th>
+    <th>Пользователь</th>
+    <th>Очки рейтинга</th>
+    <th>Количество опыта</th>
+  </tr>
+      {% for el in data %}
+        <tr>
+          <td style="width:10%; text-align: center">{{loop.index}}</td>
+          <td style="width:30%; text-align: center">{{el[0]}}</td>
+          <td style="width:30%; text-align: center">{{el[1]}}</td>
+          <td style="width:30%; text-align: center">{{el[2]}}</td>
+        </tr>
+      {% endfor %}
+
+</table>
+</body>
+</html>
+
+
+
